@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: #fff;
+  --body-clr: #f7e2e2;
+  --line-clr: #191919;
+  --light-gray: #dddddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background: #ccc;
+  margin: 1rem auto;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  margin-bottom: 2rem;
+}
+
+.box {
+  width: 500px;
+  height: 100px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+.box .inner_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--line-clr);
+}
+.input_range {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background-color: var(--light-gray);
+}
+.input_range::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background-color: var(--line-clr);
+  border-radius: 50%;
+}
+.number {
+  width: 50px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: var(--line-clr);
+}
